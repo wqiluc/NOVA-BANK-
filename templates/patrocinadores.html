@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaBank | Itaú & BB</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: { brand: '#FF6200' },
+                        yellow: { brand: '#FCF000' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1a1a1a, #000);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .ai-dual {
+            background: linear-gradient(to right, #FF6200 50%, #FCF000 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #FF6200; border-radius: 10px; }
+    </style>
+</head>
+
+<body>
+    <main class="min-h-screen flex flex-col items-center justify-center gap-6">
+        <h1 class="text-5xl font-black ai-dual">NovaBank</h1>
+
+        <p class="text-gray-300 text-lg">
+            Ecossistema financeiro inteligente
+        </p>
+
+        <div class="flex gap-8 mt-6">
+            <img src="{{ url_for('static', filename='img/itau.jpg') }}" class="h-16 object-contain">
+            <img src="{{ url_for('static', filename='img/Banco_do_Brasil.jpg') }}" class="h-16 object-contain">
+        </div>
+    </main>
+
+<a href="{{ url_for('index') }}"
+   class="mt-6 flex items-center justify-center
+          px-6 py-3 rounded-full font-semibold
+          bg-orange-brand text-black
+          hover:bg-yellow-brand transition duration-300">
+    <i class="fa-solid fa-arrow-left mr-2"></i>
+    Voltar
+</a>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="min-h-screen flex flex-col items-center justify-center space-y-6">
+    <h1 class="text-3xl font-bold">Painel Bancário 🏦🌐 </h1>
+
+    <a href="{{ url_for('tela_versaldo') }}" class="px-8 py-3 bg-orange-500 text-black font-bold rounded-xl">
+        Ver saldo 👁️
+    </a>
+
+    <a href="{{ url_for('tela_depositarsaldo') }}" class="px-8 py-3 bg-green-500 text-black font-bold rounded-xl">
+        Depositar 💸
+    </a>
+
+    <a href="{{ url_for('tela_saquesaldo') }}" class="px-8 py-3 bg-red-500 text-black font-bold rounded-xl">
+        Sacar 💳
+    </a>
+
+    <a href="{{ url_for('index') }}" class="mt-6 underline">
+        Voltar ao início 🔄
+    </a>
+</div>
+{% endblock %}

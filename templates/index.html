@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaBank | O Futuro é Digital</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;}
+        .orange-glow {
+            box-shadow: 0 0 20px rgba(255, 98, 0, 0.2);}
+        .bg-orange-brand {
+            background-color: #FF6200;}
+        .text-orange-brand {
+            color: #FF6200;}
+        .border-orange-brand {
+            border-color: #FF6200;}
+        .hover-orange:hover {
+            background-color: #E65900;}
+    </style>
+
+</head>
+
+<body class="text-white selection:bg-orange-500 selection:text-black">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 bg-orange-brand rounded-lg flex items-center justify-center font-bold text-black text-xl">NB</div>
+            <span class="text-2xl font-bold tracking-tight">Nova<span class="text-orange-brand">Bank</span></span>
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+            <a href="#" class="hover:text-orange-brand transition-colors">Para você</a>
+            <a href="#" class="hover:text-orange-brand transition-colors">Para empresas</a>
+            <a href="#" class="hover:text-orange-brand transition-colors">Para Investimentos</a>
+            <a href="#" class="hover:text-orange-brand transition-colors">SE PRECISAR DE AJUDA, ENTRE EM CONTATO COM UM ATENDENTE</a>
+        </nav>
+
+        <div>
+            <a href="{{ url_for('tela_inicio') }}">
+                <button class="bg-orange-brand hover-orange text-black px-8 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 orange-glow">
+                    Entrar
+                </button>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="pt-20">
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-brand/10 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tight">
+                Simples. Digital. <br/>
+                <span class="text-orange-brand">NovaBank.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto font-light">
+                O banco que une a solidez do Itaú e Banco do Brasil com a agilidade que o seu dia a dia exige.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="{{ url_for('tela_inicio') }}" class="w-full sm:w-auto">
+                    <button class="w-full sm:w-auto px-12 py-5 bg-orange-brand hover-orange text-black font-bold rounded-2xl text-lg transition-all shadow-2xl hover:scale-105 active:scale-95">
+                        Abra sua conta
+                    </button>
+                </a>
+               <a href="{{ url_for('patrocinadores')}}" class="w-full sm:w-auto">
+            <button class="w-full sm:w-auto px-12 py-5 border border-white/20 hover:bg-white/5 text-white font-bold rounded-2xl text-lg transition-all">
+                Nossos Patrocinadores
+            </button>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group cursor-default">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-brand/20 transition-colors">
+                        <i class="fa-solid fa-credit-card text-orange-brand text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Cartão Black</h3>
+                    <p class="text-gray-500 leading-relaxed">Experiência premium sem anuidade e com cashback em todas as compras no crédito.</p>
+                </div>
+
+                <div class="group cursor-default">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-brand/20 transition-colors">
+                        <i class="fa-solid fa-shield-halved text-orange-brand text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Segurança Máxima</h3>
+                    <p class="text-gray-500 leading-relaxed">Proteção biométrica e iToken integrado para garantir que seu dinheiro esteja sempre seguro.</p>
+                </div>
+
+                <div class="group cursor-default">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-brand/20 transition-colors">
+                        <i class="fa-solid fa-chart-line text-orange-brand text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Investimentos</h3>
+                    <p class="text-gray-500 leading-relaxed">Renda fixa e variável com assessoria especializada para fazer seu patrimônio crescer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="w-full py-6 flex flex-col items-center justify-center text-center text-sm text-gray-600">
+    <p>
+    &copy; 2025 <strong>NovaBank Instituição de Pagamento S.A.</strong> 🏦🌐🧡
+    </p>
+    <p class="mt-1">
+        made by: <strong>Lucas Paguetti Pereira</strong>, all rights reserved 👨🏻‍💻
+    </p>
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+        alt="Python"
+        class="mt-4 w-28 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+
+        <br>
+
+        <br>
+
+        <h2>Nossos Patrocinadores:</h2>
+      
+   <div class="flex items-center gap-6">
+    <img src="{{ url_for('static', filename='img/itau.jpg') }}" 
+         alt="Itaú"
+         class="w-24 h-24 object-contain">
+
+    <img src="{{ url_for('static', filename='img/Banco_do_Brasil.jpg') }}" 
+         alt="Banco do Brasil"
+         class="w-24 h-24 object-contain">
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="flex flex-col items-center justify-center min-h-screen space-y-6">
+    <h1 class="text-2xl font-bold">Depositar saldo 💸</h1>
+
+    <form method="post">
+        <input
+            type="number"
+            name="valor"
+            placeholder="Valor do depósito"
+            class="px-4 py-2 text-black rounded-lg"
+            required>
+        <button
+            type="submit"
+            class="ml-2 px-6 py-2 bg-orange-500 text-black font-bold rounded-lg">
+            Depositar 💸
+        </button>
+    </form>
+
+    <a href="{{ url_for('tela_inicio') }}" class="underline">
+        Voltar 🔄
+    </a>
+</div>
+{% endblock %}

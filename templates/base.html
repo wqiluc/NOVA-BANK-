@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaBank</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    {% block head %}{% endblock %}
+</head>
+
+<body class="bg-black text-white flex flex-col min-h-screen">
+
+    <main class="flex-grow">
+        {% block conteudo %}{% endblock %}
+    </main>
+
+    <footer class="w-full py-6 flex flex-col items-center justify-center text-center text-sm text-gray-600">
+        <p>
+            &copy; 2025 <strong>NovaBank Instituição de Pagamento S.A.</strong> 🏦🧡🌐
+        </p>
+        <p class="autor">
+            made by: <strong>Lucas Paguetti Pereira</strong>, all rights reserved 👨🏻‍💻
+        </p>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            alt="Python"
+            class="mt-4 w-28 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
