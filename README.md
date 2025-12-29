@@ -24,6 +24,21 @@
 </p>
 
 
+<p align="center">
+  <strong>🔗 URL do Frontending</strong>
+</p>
+
+<p align="center">
+<strong>
+Deploy: Render
+<img src="https://cdn.simpleicons.org/render/ffffff" width="16" style="vertical-align:middle; margin-left:6px;"/>
+</strong>
+</p>
+  <a href="https://nova-bank-kxh9.onrender.com" target="_blank">
+    https://nova-bank-kxh9.onrender.com
+  </a>
+</p>
+
 
 <h1 align="center"> 📌 Sobre o Projeto: </h1>
 <p align="center">
