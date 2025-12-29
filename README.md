@@ -29,14 +29,7 @@
 </p>
 
 <p align="center">
-<strong>
-Deploy: Render
-<img src="https://cdn.simpleicons.org/render/ffffff" width="16" style="vertical-align:middle; margin-left:6px;"/>
-</strong>
-</p>
-  <a href="https://nova-bank-kxh9.onrender.com" target="_blank">
-    https://nova-bank-kxh9.onrender.com
-  </a>
+  <strong>🔗 Deploy:</strong> <a href="https://nova-bank-kxh9.onrender.com" target="_blank">Render App</a> <img src="https://cdn.simpleicons.org/render/ffffff" width="16" style="vertical-align:middle; margin-left:6px;"/>
 </p>
 
 
