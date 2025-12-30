@@ -27,6 +27,10 @@
   <strong>🔗 URL do Frontending</strong>
 </p>
 
+<p align="center">
+  local host, por enquanto
+</p>
+
 
 
 
