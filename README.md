@@ -18,7 +18,6 @@
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white"/> 
   <img src="https://img.shields.io/badge/-Jinja2-B41717?style=flat-square&logo=jinja&logoColor=white"/>
-  <img src="https://img.shields.io/badge/-Render-000000?style=flat-square&logo=render&logoColor=red"/>
   <img src="https://img.shields.io/badge/Project%20Management-0f172a?style=flat-square&logo=trello&logoColor=white"/>
   <img src="https://img.shields.io/badge/Prototyping-111827?style=flat-square&logo=adobecreativecloud&logoColor=white"/>
 </p>
@@ -28,9 +27,7 @@
   <strong>🔗 URL do Frontending</strong>
 </p>
 
-<p align="center">
-  <strong> Deploy: </strong> <a href="https://nova-bank-kxh9.onrender.com" target="_blank">Render App</a> <img src="https://cdn.simpleicons.org/render/ffffff" width="16" style="vertical-align:middle; margin-left:6px;"/>
-</p>
+
 
 
 <h1 align="center"> 📌 Sobre o Projeto: </h1>
@@ -100,7 +97,6 @@ templates/
   <img src="https://img.shields.io/badge/HTML5-5.3-E34F26?style=flat-square"/> 
   <img src="https://img.shields.io/badge/TailwindCSS-3.4.8-38B2AC?style=flat-square"/> 
   <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat-square"/> 
-  <img src="https://img.shields.io/badge/Render-Latest-6B5BFF?style=flat-square"/>
   <img src="https://img.shields.io/badge/Prototyping-111827?style=flat-square&logo=adobecreativecloud&logoColor=white"/>
 </p>
 
@@ -108,7 +104,7 @@ templates/
 
 <h1 align="center">🚀 Deploy: </h1>
 <p align="center">
-O sistema está pronto para deploy em plataformas que suportam **WSGI**, como o **Render**.
+O sistema está pronto para deploy em plataformas que suportam **WSGI**.
 Basta apontar o `wsgi.py` e instalar as dependências listadas em `requirements.txt`.
 </p>
 
